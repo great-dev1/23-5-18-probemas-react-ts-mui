@@ -1,0 +1,385 @@
+body {
+  min-height: 100vh;
+  color: white;
+}
+
+@font-face {
+  font-family: oxanium;
+  src: url("/fonts/Oxanium-VariableFont_wght.ttf");
+}
+
+.oxanium_font {
+  font-family: oxanium;
+}
+
+// Navbar
+@font-face {
+  font-family: overpassMono;
+  src: url("/fonts/OverpassMono-VariableFont_wght.ttf");
+}
+
+.overpass_font {
+  font-family: overpassMono;
+}
+
+.hover-underline {
+  position: relative;
+
+  & span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: 0px;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+  }
+
+  & span.blue::after {
+    background-color: #4cb8da;
+  }
+
+  & span.green::after {
+    background-color: #9ffb98;
+  }
+
+  &:hover span::after {
+    left: 0;
+    right: 0;
+  }
+
+  &:hover span.blue::after,
+  &:hover span.green::after {
+    right: 24px;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.rotate {
+  animation: rotation 1s infinite linear;
+}
+
+// Background Image
+.mono-bg {
+  background-image: url("/images/NY_monochrome_4k.jpg");
+
+  /*   @media (min-width: 1280px) {
+    background-image: url("/images/NY_monochrome_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_monochrome_4k.jpg");
+  } */
+}
+
+.color-new-bg {
+  background-image: url("/images/NY_color_4k.jpg");
+
+  /*   @media (min-width: 1280px) {
+    background-image: url("/images/NY_color_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_color_4k.jpg");
+  } */
+}
+
+.level-1-bg {
+  background-image: url("/images/NY_1_4k.jpg");
+
+  /*   @media (min-width: 1280px) {
+    background-image: url("/images/NY_1_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_1_4k.jpg");
+  } */
+}
+
+.level-2-bg {
+  background-image: url("/images/NY_2_4k.jpg");
+
+  /*   @media (min-width: 1280px) {
+    background-image: url("/images/NY_2_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_2_4k.jpg");
+  } */
+}
+
+.level-3-bg {
+  background-image: url("/images/NY_3_4k.jpg");
+
+  /* @media (min-width: 1280px) {
+    background-image: url("/images/NY_3_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_3_4k.jpg");
+  } */
+}
+
+.level-4-bg {
+  background-image: url("/images/NY_4_4k.jpg");
+
+  /* @media (min-width: 1280px) {
+    background-image: url("/images/NY_4_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_4_4k.jpg");
+  } */
+}
+
+.level-5-bg {
+  background-image: url("/images/NY_5_4k.jpg");
+
+  /* @media (min-width: 1280px) {
+    background-image: url("/images/NY_5_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_5_4k.jpg");
+  } */
+}
+
+.level-6-bg {
+  background-image: url("/images/NY_6_4k.jpg");
+
+  /* @media (min-width: 1280px) {
+    background-image: url("/images/NY_6_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_6_4k.jpg");
+  } */
+}
+
+.level-7-bg {
+  background-image: url("/images/NY_7_4k.jpg");
+
+  /* @media (min-width: 1280px) {
+    background-image: url("/images/NY_7_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_7_4k.jpg");
+  } */
+}
+
+.level-8-bg {
+  background-image: url("/images/NY_8_4k.jpg");
+
+  /* @media (min-width: 1280px) {
+    background-image: url("/images/NY_8_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_8_4k.jpg");
+  } */
+}
+
+.level-9-bg {
+  background-image: url("/images/NY_9_4k.jpg");
+
+  /* @media (min-width: 1280px) {
+    background-image: url("/images/NY_9_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_9_4k.jpg");
+  } */
+}
+
+.level-10-bg {
+  background-image: url("/images/NY_10_4k.jpg");
+
+  /* @media (min-width: 1280px) {
+    background-image: url("/images/NY_10_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_10_4k.jpg");
+  } */
+}
+
+.level-11-bg {
+  background-image: url("/images/NY_11_4k.jpg");
+
+  /* @media (min-width: 1280px) {
+    background-image: url("/images/NY_10_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_10_4k.jpg");
+  } */
+}
+
+.level-12-bg {
+  background-image: url("/images/NY_12_4k.jpg");
+
+  /* @media (min-width: 1280px) {
+    background-image: url("/images/NY_12_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/NY_12_4k.jpg");
+  } */
+}
+
+.space-bg {
+  background-image: url("/images/Space_4k.jpg");
+
+  /* @media (min-width: 1280px) {
+    background-image: url("/images/Space_1080p.jpg");
+  }
+
+  @media (min-width: 1920px) {
+    background-image: url("/images/Space_4k.jpg");
+  } */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadein {
+  animation: fadeIn 1s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blink 1s;
+}
+
+.text-shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes dot-animation-2 {
+  0% {
+    opacity: 0;
+  }
+
+  19% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dot-animation-3 {
+  0% {
+    opacity: 0;
+  }
+
+  39% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dot-animation-4 {
+  0% {
+    opacity: 0;
+  }
+
+  59% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dot-animation-5 {
+  0% {
+    opacity: 0;
+  }
+
+  79% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.dot-2 {
+  animation: dot-animation-2 4s infinite;
+}
+
+.dot-3 {
+  animation: dot-animation-3 4s infinite;
+}
+
+.dot-4 {
+  animation: dot-animation-4 4s infinite;
+}
+
+.dot-5 {
+  animation: dot-animation-5 4s infinite;
+}
+
+.transition-height {
+  transition: height 1s;
+}
+
+@media (min-width: 1280px) {
+  .transition-width {
+    transition: width 2s ease-in-out;
+  }
+}
